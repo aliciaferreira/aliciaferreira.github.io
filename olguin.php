@@ -14,3 +14,7 @@ echo "<a href='olguin.html' style='
   transition: background-color 0.2s ease-in-out;
   text-decoration: none;
 '>Volver</a> ";
+?>
+
+
+<iframe src="https://giphy.com/embed/tXL4FHPSnVJ0A" width="480" height="317" frameBorder="0" class="giphy-embed" allowFullScreen>
