@@ -1,6 +1,6 @@
 <?php
 
-require("bogarin.html.html");
+require("bogarin.html");
 
 $usuario=(isset($_GET['usuario'])?$_GET['usuario']:"No cargaste un nombre de usuario");
 $localidad=(isset($_GET['llcalidad'])?$_GET['localidad']:"No pusiste localidad");
