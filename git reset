@@ -1,0 +1,42 @@
+[1mdiff --git a/manco.html b/manco.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d118c77[m
+[1m--- /dev/null[m
+[1m+++ b/manco.html[m
+[36m@@ -0,0 +1,19 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m  <head>[m
+[32m+[m[32m    <meta charset="UTF-8" />[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0" />[m
+[32m+[m[32m    <title>Preferencias</title>[m
+[32m+[m[32m  </head>[m
+[32m+[m[32m  <body>[m
+[32m+[m[32m    <form action="manco.php" method="get"><br><br>[m
+[32m+[m[32m        <h1>Cuáles son tus preferencias en...</h1>[m
+[32m+[m[32m        Usuario:[m
+[32m+[m[32m        <input type="text" name="usuario" require><br><br>[m
+[32m+[m[32m        deporte:[m
+[32m+[m[32m        <input type="text" name="deporte" require><br><br>[m
+[32m+[m[32m        <input type="submit" value="Cargar">[m
+[32m+[m[32m    </form>[m
+[32m+[m[32m  </body>[m
+[32m+[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/manco.php b/manco.php[m
+[1mnew file mode 100644[m
+[1mindex 0000000..dcc56f1[m
+[1m--- /dev/null[m
+[1m+++ b/manco.php[m
+[36m@@ -0,0 +1,9 @@[m
+[32m+[m[32m<?php[m
+[32m+[m[32mrequire("manco.html");[m
+[32m+[m
+[32m+[m[32m$usuario=(isset($_GET['usuario'])?$_GET['usuario']:"No cargaste un nombre de usuario");[m
+[32m+[m[32m$deporte=(isset($_GET['deporte'])?$_GET['deporte']:"No cargaste un color preferido");[m
+[32m+[m[32m?><br><br><?php[m
+[32m+[m[32mecho "Hola $usuario";?><br><?php[m
+[32m+[m[32mecho "Tu deporte preferido es: $deporte";?><br><br><?php[m
+[32m+[m[32m?>[m
+\ No newline at end of file[m
