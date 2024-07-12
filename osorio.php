@@ -1,0 +1,9 @@
+<?php
+require("osorio.html");
+
+$usuario=(isset($_GET['usuario'])?$_GET['usuario']:"No cargaste un nombre de usuario");
+$color=(isset($_GET['equipo'])?$_GET['equipo']:"No cargaste un color preferido");
+?><br><br><?php
+echo "Hola $usuario";?><br><?php
+echo "Tu color preferido es: $color";?><br><br><?php
+?>
