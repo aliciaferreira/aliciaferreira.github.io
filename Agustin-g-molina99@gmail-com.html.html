@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preferencias</title>
+</head>
+<body>
+    <form id="preferencesForm"><br><br>
+        <h1>Cuáles son tus preferencias en...</h1>
+        Usuario:
+        <input type="text" name="usuario" id="usuario" required><br><br>
+        Color:
+        <input type="text" name="color" id="color" required><br><br>
+        <input type="submit" value="Cargar">
+    </form>
+
+    <div id="result" style="display: none;">
+        <br><br>
+        <p id="userOutput"></p>
+        <p id="colorOutput"></p>
+        <br><br>
+    </div>
+
+    <script>
+        document.getElementById('preferencesForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Evita que el formulario se envíe normalmente
+            
+            const usuario = document.getElementById('usuario').value || "No cargaste un nombre de usuario";
+            const color = document.getElementById('color').value || "No cargaste un color preferido";
+            
+            // Mostrar los resultados
+            document.getElementById('userOutput').textContent = `Hola ${usuario}`;
+            document.getElementById('colorOutput').textContent = `Tu color preferido es: ${color}`;
+            document.getElementById('result').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
