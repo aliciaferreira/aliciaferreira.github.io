@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preferencias</title>
+</head>
+<body>
+    <form id="preferencesForm"><br><br>
+        <h1>Cuáles son tus preferencias en...</h1>
+        Usuario:
+        <input type="text" name="usuario" id="usuario" required><br><br>
+        bebida:
+        <input type="text" name="bebida" id="bebida" required><br><br>
+        <input type="submit" value="Cargar">
+    </form>
+
+    <div id="result" style="display: none;">
+        <br><br>
+        <p id="userOutput"></p>
+        <p id="bebidaOutput"></p>
+        <br><br>
+    </div>
+
+    <script>
+        document.getElementById('preferencesForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Evita que el formulario se envíe normalmente
+            
+            const usuario = document.getElementById('usuario').value || "No cargaste un nombre de usuario";
+            const bebida = document.getElementById('bebida').value || "No cargaste una bebida preferida";
+            
+            // Mostrar los resultados
+            document.getElementById('userOutput').textContent = `Hola ${usuario}`;
+            document.getElementById('bebidaOutput').textContent = `Tu bebida preferida es: ${bebida}`;
+            document.getElementById('result').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
