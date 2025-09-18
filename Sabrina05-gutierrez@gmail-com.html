@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preferencias</title>
 </head>
 <body>
-    <h1>Hola Soy Sabrina Gutierrez.</h1>
-    <h2>Mi preferencia es seguir aprendiendo.</h2>
+    <form id="preferencesForm"><br><br>
+        <h1>Cuáles son tus preferencias en...</h1>
+        Usuario:
+        <input type="text" name="usuario" id="usuario" required><br><br>
+        Color:
+        <input type="text" name="color" id="color" required><br><br>
+        <input type="submit" value="Cargar">
+    </form>
+
+    <div id="result" style="display: none;">
+        <br><br>
+        <p id="userOutput"></p>
+        <p id="colorOutput"></p>
+        <br><br>
+    </div>
+
+  <script>
+  const coloresTraducidos = {
+    rojo: "red",
+    azul: "blue",
+    verde: "green",
+    amarillo: "yellow",
+    negro: "black",
+    blanco: "white",
+    gris: "gray",
+    violeta: "violet",
+    naranja: "orange",
+    rosa: "pink",
+    marrón: "brown",
+    celeste: "#87CEEB",
+    bordó: "#800000",
+    beige: "#F5F5DC",
+    dorado: "gold",
+    plateado: "silver",
+    fucsia: "#FF00FF",
+    turquesa: "#40E0D0",
+    lila: "#C8A2C8",
+    salmón: "#FA8072",
+    coral: "#FF7F50",
+    lavanda: "#E6E6FA"
+  };
+
+  document.getElementById('preferencesForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const usuario = document.getElementById('usuario').value || "No cargaste un nombre de usuario";
+    const colorOriginal = document.getElementById('color').value.toLowerCase() || "No cargaste un color preferido";
+    const colorTraducido = coloresTraducidos[colorOriginal] || colorOriginal;
+
+    document.getElementById('userOutput').textContent = `Hola ${usuario}`;
+    document.getElementById('colorOutput').textContent = `Tu color preferido es: ${colorOriginal}`;
+    document.getElementById('result').style.display = 'block';
+    document.getElementById('result').style.color = colorTraducido;
+  });
+</script>
 </body>
 </html>
