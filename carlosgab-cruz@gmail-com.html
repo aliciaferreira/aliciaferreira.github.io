@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,15 +10,15 @@
         <h1>Cuáles son tus preferencias en...</h1>
         Mejor consola para jugar:
         <input type="text" name="usuario" id="usuario" required><br><br>
-        Juego:
-        <input type="text" name="color" id="color" required><br><br>
-        <input type="submit" value="Cargar">
+        Juego favorito:
+        <input type="text" name="juego" id="juego" required><br><br>
+        <input type="submit" value="Guardar">
     </form>
 
     <div id="result" style="display: none;">
         <br><br>
         <p id="userOutput"></p>
-        <p id="colorOutput"></p>
+        <p id="juegoOutput"></p>
         <br><br>
     </div>
 
@@ -26,12 +26,12 @@
         document.getElementById('preferencesForm').addEventListener('submit', function(e) {
             e.preventDefault(); // Evita que el formulario se envíe normalmente
             
-            const usuario = document.getElementById('usuario').value || "No cargaste un nombre de usuario";
-            const color = document.getElementById('color').value || "No cargaste un color preferido";
+            const usuario = document.getElementById('usuario').value || "No ingresaste una consola";
+            const juego = document.getElementById('juego').value || "No ingresaste un juego favorito";
             
             // Mostrar los resultados
-            document.getElementById('userOutput').textContent = `Tu mejor consola para juegar es: ${usuario}`;
-            document.getElementById('colorOutput').textContent = `El mejor juego para ti es: ${color}`;
+            document.getElementById('userOutput').textContent = `Tu mejor consola para jugar es: ${usuario}`;
+            document.getElementById('juegoOutput').textContent = `Tu juego favorito es: ${juego}`;
             document.getElementById('result').style.display = 'block';
         });
     </script>
