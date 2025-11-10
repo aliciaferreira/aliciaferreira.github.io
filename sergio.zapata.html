@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Hardware PC</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* Nueva paleta de colores "tech" */
+            background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            /* Nuevo gradiente para el header */
+            background: linear-gradient(45deg, #00d2ff, #3a7bd5);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        /* Nuevas clases y colores para las secciones */
+        .ensamblaje {
+            background: linear-gradient(135deg, #a29bfe, #6c5ce7);
+            color: white;
+        }
+
+        .componentes {
+            background: linear-gradient(135deg, #11998e, #38ef7d);
+            color: white;
+        }
+
+        .conceptos-hw {
+            background: linear-gradient(135deg, #f2994a, #f2c94c);
+            color: white;
+        }
+
+        .resources {
+            background: linear-gradient(135deg, #fd79a8, #e84393);
+            color: white;
+        }
+
+        .stats {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+        }
+
+        .section h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            padding-bottom: 10px;
+        }
+
+        .instruction-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+
+        .instruction-list li {
+            counter-increment: step-counter;
+            margin-bottom: 15px;
+            padding: 15px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            position: relative;
+            padding-left: 60px;
+        }
+
+        .instruction-list li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255,255,255,0.2);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        /* Clases renombradas de 'student' a 'component' */
+        .component-card {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border-left: 4px solid rgba(255,255,255,0.3);
+        }
+
+        .component-name {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .component-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .info-item {
+            background: rgba(255,255,255,0.1);
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+
+        .concept-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .concept-item {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+        }
+
+        .resource-list {
+            list-style: none;
+        }
+
+        .resource-list li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 5px;
+        }
+
+        .resource-list a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .resource-list a:hover {
+            text-decoration: underline;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+        }
+
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .refresh-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #00d2ff;
+            color: #111;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .refresh-btn:hover {
+            background: #3a7bd5;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        .loading {
+            text-align: center;
+            padding: 50px;
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .error {
+            background: #e74c3c;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⚙️ Guía de Componentes de PC</h1>
+            <p>Explora el Hardware Esencial para tu Próxima Build</p>
+        </div>
+
+        <div class="content" id="content">
+            <div class="loading">
+                <p>🔩 Cargando componentes...</p>
+            </div>
+        </div>
+    </div>
+
+    <button class="refresh-btn" onclick="loadData()" title="Actualizar datos">
+        🔄 Recargar
+    </button>
+
+    <script>
+        async function loadData() {
+            try {
+                // Sigue cargando desde el mismo archivo JSON
+                const response = await fetch('playground-1.json');
+                
+                if (!response.ok) {
+                    throw new Error(`Error HTTP: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                displayData(data);
+            } catch (error) {
+                console.error('Error al cargar el JSON:', error);
+                document.getElementById('content').innerHTML = `
+                    <div class="error">
+                        <h2>❌ Error al cargar los datos</h2>
+                        <p>Asegúrate de que el archivo 'playground-1.json' (con el nuevo contenido de hardware) esté en la misma carpeta que este HTML.</p>
+                        <p>Error técnico: ${error.message}</p>
+                    </div>
+                `;
+            }
+        }
+
+        function displayData(data) {
+            const content = document.getElementById('content');
+            
+            // Renderizado de HTML completamente nuevo basado en la estructura de datos de hardware
+            content.innerHTML = `
+                <div class="section ensamblaje">
+                    <h2>🛠️ Pasos de Ensamblaje</h2>
+                    <ol class="instruction-list">
+                        ${data.instrucciones_ensamblaje.map(instruction => `<li>${instruction}</li>`).join('')}
+                    </ol>
+                </div>
+
+                <div class="section componentes">
+                    <h2>🔥 Componentes Destacados (${data.componentes_destacados.length})</h2>
+                    ${data.componentes_destacados.map(comp => `
+                        <div class="component-card">
+                            <div class="component-name">📦 ${comp.nombre}</div>
+                            <div class="component-info">
+                                <div class="info-item">
+                                    <strong>Tipo:</strong> ${comp.tipo}
+                                </div>
+                                <div class="info-item">
+                                    <strong>Precio Aprox:</strong> ${comp.precio_aprox}
+                                </div>
+                            </div>
+                            <div style="margin-top: 15px; font-style: italic; font-size: 1.1em;">
+                                💡 "${comp.descripcion}"
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+
+                <div class="section conceptos-hw">
+                    <h2>🧠 Conceptos de Hardware</h2>
+                    <div class="concept-grid">
+                        ${data.conceptos_hardware.map(concept => `
+                            <div class="concept-item">${concept}</div>
+                        `).join('')}
+                    </div>
+                </div>
+
+                <div class="section resources">
+                    <h2>📚 Recursos Útiles</h2>
+                    <ul class="resource-list">
+                        <li><strong>PC Part Picker:</strong> <a href="${data.recursos_adicionales.pc_part_picker}" target="_blank">Arma tu PC</a></li>
+                        <li><strong>Gamers Nexus:</strong> <a href="${data.recursos_adicionales.gamers_nexus}" target="_blank">Análisis Detallados</a></li>
+                        <li><strong>TechRadar:</strong> <a href="${data.recursos_adicionales.tech_radar}" target="_blank">Noticias y Reseñas</a></li>
+                    </ul>
+                </div>
+
+                <div class="section stats">
+                    <h2>📊 Estadísticas de la Guía</h2>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">${data.estadisticas.total_componentes}</span>
+                            <span>Componentes</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">${data.estadisticas.version}</span>
+                            <span>Versión Guía</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">${data.estadisticas.ultima_actualizacion}</span>
+                            <span>Actualización</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Cargar datos al iniciar la página
+        document.addEventListener('DOMContentLoaded', loadData);
+
+        // Auto-actualizar cada 30 segundos
+        setInterval(loadData, 30000);
+    </script>
+</body>
+</html>
