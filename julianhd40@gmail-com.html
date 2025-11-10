@@ -7,7 +7,7 @@
 </head>
 <body>
     <form id="preferencesForm"><br><br>
-        <h1>Cuáles son tus preferencias en...</h1>
+        <h1>Cuáles son tus preferencias en Paises </h1>
         Usuario:
         <input type="text" name="usuario" id="usuario" required><br><br>
         Pais:
@@ -18,7 +18,7 @@
     <div id="result" style="display: none;">
         <br><br>
         <p id="userOutput"></p>
-        <p id="colorOutput"></p>
+        <p id="paisOutput"></p>
         <br><br>
     </div>
 
@@ -31,7 +31,7 @@
             
             // Mostrar los resultados
             document.getElementById('userOutput').textContent = `Hola ${usuario}`;
-            document.getElementById('colorOutput').textContent = `Tu Pais preferido es: ${pais}`;
+            document.getElementById('paisOutput').textContent = `Tu Pais preferido es: ${pais}`;
             document.getElementById('result').style.display = 'block';
         });
     </script>
