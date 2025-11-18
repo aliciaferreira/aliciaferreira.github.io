@@ -10,28 +10,29 @@
         <h1>Cuáles son tus preferencias en...</h1>
         Usuario:
         <input type="text" name="usuario" id="usuario" required><br><br>
-        Color:
-        <input type="text" name="color" id="color" required><br><br>
+
+        Comida favorita:
+        <input type="text" name="comida" id="comida" required><br><br>
+
         <input type="submit" value="Cargar">
     </form>
 
     <div id="result" style="display: none;">
         <br><br>
         <p id="userOutput"></p>
-        <p id="colorOutput"></p>
+        <p id="comidaOutput"></p>
         <br><br>
     </div>
 
     <script>
         document.getElementById('preferencesForm').addEventListener('submit', function(e) {
-            e.preventDefault(); // Evita que el formulario se envíe normalmente
+            e.preventDefault(); 
             
             const usuario = document.getElementById('usuario').value || "No cargaste un nombre de usuario";
-            const color = document.getElementById('color').value || "No cargaste un color preferido";
+            const comida = document.getElementById('comida').value || "No ingresaste una comida favorita";
             
-            // Mostrar los resultados
             document.getElementById('userOutput').textContent = `Hola ${usuario}`;
-            document.getElementById('colorOutput').textContent = `Tu color preferido es: ${color}`;
+            document.getElementById('comidaOutput').textContent = `Tu comida favorita es: ${comida}`;
             document.getElementById('result').style.display = 'block';
         });
     </script>
