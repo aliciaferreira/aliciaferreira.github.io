@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preferencias</title>
+</head>
+<body>
+    <form id="preferencesForm"><br><br>
+        <h1>Cuáles son tus preferencias en la música</h1>
+        Usuario:
+        <input type="text" name="usuario" id="usuario" required><br><br>
+        Genero Musical:
+        <input type="text" name="musica" id="musica" required><br><br>
+        <input type="submit" value="Cargar">
+    </form>
+
+    <div id="result" style="display: none;">
+        <br><br>
+        <p id="userOutput"></p>
+        <p id="musicaOutput"></p>
+        <br><br>
+    </div>
+
+    <script>
+        document.getElementById('preferencesForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Evita que el formulario se envíe normalmente
+            
+            const usuario = document.getElementById('usuario').value || "No cargaste un nombre de usuario";
+            const musica = document.getElementById('musica').value || "No cargaste un genero musical preferido";
+            
+            // Mostrar los resultados
+            document.getElementById('userOutput').textContent = `Hola ${usuario}`;
+            document.getElementById('musicaOutput').textContent = `Tu musica preferida es: ${musica}`;
+            document.getElementById('result').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
