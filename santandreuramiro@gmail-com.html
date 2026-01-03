@@ -7,18 +7,18 @@
 </head>
 <body>
     <form id="preferencesForm"><br><br>
-        <h1>Cuáles son tus preferencias en...</h1>
+        <h1>Cuáles son tus preferencias en peliculas</h1>
         Usuario:
         <input type="text" name="usuario" id="usuario" required><br><br>
-        Color:
-        <input type="text" name="color" id="color" required><br><br>
+        Pelicula:
+        <input type="text" name="pelicula" id="pelicula" required><br><br>
         <input type="submit" value="Cargar">
     </form>
 
     <div id="result" style="display: none;">
         <br><br>
         <p id="userOutput"></p>
-        <p id="colorOutput"></p>
+        <p id="peliculaOutput"></p>
         <br><br>
     </div>
 
@@ -27,11 +27,11 @@
             e.preventDefault(); // Evita que el formulario se envíe normalmente
             
             const usuario = document.getElementById('usuario').value || "No cargaste un nombre de usuario";
-            const color = document.getElementById('color').value || "No cargaste un color preferido";
+            const pelicula = document.getElementById('pelicula').value || "No cargaste una pelicula preferida";
             
             // Mostrar los resultados
             document.getElementById('userOutput').textContent = `Hola ${usuario}`;
-            document.getElementById('colorOutput').textContent = `Tu color preferido es: ${color}`;
+            document.getElementById('peliculaOutput').textContent = `Tu pelicula preferida es: ${pelicula}`;
             document.getElementById('result').style.display = 'block';
         });
     </script>
