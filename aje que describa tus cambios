@@ -1,0 +1,141 @@
+* [33ma47f2ab[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m delete innecesary files
+*   [33m7f1167a[m Merge branch 'develop'
+[32m|[m[33m\[m  
+[32m|[m * [33mb417741[m[33m ([m[1;31morigin/develop[m[33m)[m adapt project for SA 2025
+* [33m|[m   [33m5027a6d[m Merge pull request #54 from aliciaferreira/aldereteluis
+[34m|[m[35m\[m [33m\[m  
+[34m|[m [35m|[m [33m|[m * [33m607d816[m[33m ([m[1;31morigin/aldereteluis[m[33m)[m enviando index.php
+[34m|[m [35m|[m [33m|[m * [33mdb79f21[m reenvio de los archivos php y html con nombre aderete
+[34m|[m [35m|[m [33m|[m * [33me28023c[m envio de los archivos php y html con nombre aderete
+[34m|[m [35m|[m [33m|[m * [33mc094cb5[m modificado index
+[34m|[m [35m|[m [33m|[m[35m/[m  
+[34m|[m [35m|[m[35m/[m[33m|[m   
+[34m|[m * [33m|[m [33ma407e16[m modificado php y html
+[34m|[m * [33m|[m [33m130e180[m Crear y agregar cambios archivo alderetegomez.php
+[34m|[m * [33m|[m [33m7cf5f7a[m Crear archivo alderetegomez.php
+[34m|[m[34m/[m [33m/[m  
+[34m|[m [33m|[m * [33m039e827[m[33m ([m[1;31morigin/galvan[m[33m)[m Añadi preferencia: Equipo Futbol
+[34m|[m [33m|[m *   [33m424a44a[m[33m ([m[1;31morigin/development[m[33m)[m Merge branch 'canteros' into development
+[34m|[m [33m|[m [1;32m|[m[1;33m\[m  
+[34m|[m [33m|[m [1;32m|[m * [33m0ee3f4e[m[33m ([m[1;31morigin/canteros[m[33m)[m Se añadio la preferencia instrumento musical
+[34m|[m [33m|[m [1;32m|[m * [33macbf1ed[m Merge branch 'development' of github.com:aliciaferreira/aliciaferreira.github.io into development
+[34m|[m [33m|[m[34m_[m[1;32m|[m[34m/[m[1;35m|[m 
+[34m|[m[34m/[m[33m|[m [1;32m|[m [1;35m|[m 
+[34m|[m [33m|[m * [1;35m|[m [33mc629019[m Merge branch 'development' of github.com:aliciaferreira/aliciaferreira.github.io into development
+[34m|[m [33m|[m[34m/[m[1;35m|[m [1;35m|[m 
+[34m|[m[34m/[m[33m|[m [1;35m|[m[1;35m/[m  
+[34m|[m [33m|[m * [33ma999d8f[m Preferencia animal
+[34m|[m [33m|[m [31m|[m *   [33mcc2a003[m[33m ([m[1;31morigin/vazquez[m[33m)[m Merge branch 'develop' of https://github.com/aliciaferreira/aliciaferreira.github.io into vazquez
+[34m|[m [33m|[m [31m|[m [32m|[m[33m\[m  
+[34m|[m [33m|[m [31m|[m[33m_[m[32m|[m[33m/[m  
+[34m|[m [33m|[m[33m/[m[31m|[m [32m|[m   
+[34m|[m * [31m|[m [32m|[m   [33m7b874be[m[33m ([m[1;31morigin/RodriguezMarina[m[33m)[m Merge branch 'develop' of github.com:aliciaferreira/aliciaferreira.github.io into develop
+[34m|[m [34m|[m[35m\[m [31m\[m [32m\[m  
+[34m|[m [34m|[m * [31m\[m [32m\[m   [33m4ec572d[m Merge branch 'develop' of https://github.com/aliciaferreira/aliciaferreira into develop
+[34m|[m [34m|[m [36m|[m[1;31m\[m [31m\[m [32m\[m  
+[34m|[m * [36m|[m [1;31m\[m [31m\[m [32m\[m   [33mb5bd915[m Merge branch 'main' of github.com:aliciaferreira/aliciaferreira.github.io into develop
+[34m|[m [1;32m|[m[34m\[m [36m\[m [1;31m\[m [31m\[m [32m\[m  
+[34m|[m [1;32m|[m[34m/[m [36m/[m [1;31m/[m [31m/[m [32m/[m  
+[34m|[m[34m/[m[1;32m|[m [36m|[m [1;31m|[m [31m|[m [32m|[m   
+[34m|[m * [36m|[m [1;31m|[m [31m|[m [32m|[m [33m90ba7bb[m add preferences rodriguez
+[34m|[m [31m|[m [36m|[m[31m_[m[1;31m|[m[31m/[m [32m/[m  
+[34m|[m [31m|[m[31m/[m[36m|[m [1;31m|[m [32m|[m   
+[34m|[m [31m|[m [36m|[m [1;31m|[m * [33mb4ba3cd[m add preference serie
+[34m|[m [31m|[m [36m|[m[31m_[m[1;31m|[m[31m/[m  
+[34m|[m [31m|[m[31m/[m[36m|[m [1;31m|[m   
+[34m|[m [31m|[m [36m|[m [1;31m|[m * [33maaacc57[m[33m ([m[1;31morigin/Manco[m[33m)[m agregar deporte
+[34m|[m [31m|[m[34m_[m[36m|[m[34m_[m[1;31m|[m[34m/[m  
+[34m|[m[34m/[m[31m|[m [36m|[m [1;31m|[m   
+* [31m|[m [36m|[m [1;31m|[m   [33m5f64670[m Merge pull request #26 from aliciaferreira/Acuña
+[36m|[m[1;36m\[m [31m\[m [36m\[m [1;31m\[m  
+[36m|[m [1;36m|[m[36m_[m[31m|[m[36m/[m [1;31m/[m  
+[36m|[m[36m/[m[1;36m|[m [31m|[m [1;31m|[m   
+[36m|[m * [31m|[m [1;31m|[m [33m8a1d448[m[33m ([m[1;31morigin/Acuña[m[33m)[m modific acunia and add acunia.html
+[36m|[m * [31m|[m [1;31m|[m [33m272fdd8[m add juegos acunia
+[36m|[m [31m|[m[31m/[m [1;31m/[m  
+[36m|[m [31m|[m [1;31m|[m *   [33m2b6bbd3[m[33m ([m[1;31morigin/duarteromina[m[33m)[m Merge branch 'develop' of https://github.com/aliciaferreira/aliciaferreira into duarteromina
+[36m|[m [31m|[m [1;31m|[m [31m|[m[1;31m\[m  
+[36m|[m [31m|[m [1;31m|[m [31m|[m[1;31m/[m  
+[36m|[m [31m|[m [1;31m|[m[1;31m/[m[31m|[m   
+[36m|[m [31m|[m [1;31m|[m * [33m31ceb60[m preferencia animal
+[36m|[m [31m|[m[36m_[m[1;31m|[m[36m/[m  
+[36m|[m[36m/[m[31m|[m [1;31m|[m   
+[36m|[m [31m|[m [1;31m|[m *   [33m0776a36[m[33m ([m[1;31morigin/juarez[m[33m)[m Merge remote-tracking branch 'origin/develop' into juarez
+[36m|[m [31m|[m [1;31m|[m [33m|[m[1;31m\[m  
+[36m|[m [31m|[m [1;31m|[m [33m|[m[1;31m/[m  
+[36m|[m [31m|[m [1;31m|[m[1;31m/[m[33m|[m   
+[36m|[m [31m|[m * [33m|[m [33m690a12b[m fix develop
+[36m|[m [31m|[m [34m|[m * [33m5aa3922[m agregar musica
+[36m|[m [31m|[m [34m|[m[31m/[m  
+[36m|[m [31m|[m[31m/[m[34m|[m   
+[36m|[m [31m|[m [34m|[m *   [33mcaca850[m[33m ([m[1;31morigin/belenrojas[m[33m)[m Merge branch 'develop' of github.com:aliciaferreira/aliciaferreira.github.io into belenrojas "Actulizando preferencias"
+[36m|[m [31m|[m [34m|[m [35m|[m[34m\[m  
+[36m|[m [31m|[m [34m|[m [35m|[m[34m/[m  
+[36m|[m [31m|[m [34m|[m[34m/[m[35m|[m   
+[36m|[m [31m|[m * [35m|[m [33m96d4801[m Manco
+[36m|[m [31m|[m * [35m|[m   [33m657601e[m Merge branch 'develop' of https://github.com/aliciaferreira/aliciaferreira into develop
+[36m|[m [31m|[m [1;31m|[m[1;32m\[m [35m\[m  
+[36m|[m [31m|[m [1;31m|[m * [35m|[m [33ma9781fe[m equipo de futbol
+[36m|[m [31m|[m * [1;32m|[m [35m|[m [33m1d49583[m Manco
+[36m|[m [31m|[m[31m/[m [1;32m/[m [35m/[m  
+[36m|[m [31m|[m [1;32m|[m * [33m6e54c59[m Agrego preferencias Equipo
+[36m|[m [31m|[m[36m_[m[1;32m|[m[36m/[m  
+[36m|[m[36m/[m[31m|[m [1;32m|[m   
+[36m|[m [31m|[m [1;32m|[m * [33m7b08fe7[m[33m ([m[1;31morigin/damico[m[33m)[m agregar edad
+[36m|[m [31m|[m [1;32m|[m[31m/[m  
+[36m|[m [31m|[m[31m/[m[1;32m|[m   
+[36m|[m [31m|[m [1;32m|[m * [33mb662081[m[33m ([m[1;31morigin/camacho[m[33m)[m HTML y PHP a nombre de camacho ya testeado y funcional
+[36m|[m [31m|[m[36m_[m[1;32m|[m[36m/[m  
+[36m|[m[36m/[m[31m|[m [1;32m|[m   
+* [31m|[m [1;32m|[m   [33m4b2d97b[m[33m ([m[1;31morigin/SantosJonathan[m[33m)[m Merge pull request #41 from aliciaferreira/JorgeBogarin
+[31m|[m[1;36m\[m [31m\[m [1;32m\[m  
+[31m|[m [1;36m|[m[31m/[m [1;32m/[m  
+[31m|[m[31m/[m[1;36m|[m [1;32m|[m   
+[31m|[m * [1;32m|[m [33m6caea22[m[33m ([m[1;31morigin/JorgeBogarin[m[33m)[m resolve
+[31m|[m * [1;32m|[m [33m36a7584[m resolve all
+[31m|[m[31m/[m [1;32m/[m  
+[31m|[m [1;32m|[m * [33m7aaeaf8[m[33m ([m[1;31morigin/osorio[m[33m)[m Añadidos archivos osorio.html y osorio.php
+[31m|[m [1;32m|[m [31m|[m * [33maf65057[m[33m ([m[1;31morigin/fernandolemos[m[33m)[m preferencias: juego de mesa
+[31m|[m [1;32m|[m [31m|[m * [33mca202f8[m Preferencia: juego de mesa
+[31m|[m [1;32m|[m[31m_[m[31m|[m[31m/[m  
+[31m|[m[31m/[m[1;32m|[m [31m|[m   
+[31m|[m [1;32m|[m [31m|[m * [33m13fda3d[m[33m ([m[1;31morigin/tombazzi[m[33m)[m agregado archivos tombazzi html y php
+[31m|[m [1;32m|[m [31m|[m[1;32m/[m  
+[31m|[m [1;32m|[m[1;32m/[m[31m|[m   
+[31m|[m [1;32m|[m [31m|[m *   [33me1f179d[m[33m ([m[1;31morigin/larrea[m[33m)[m Merge branch 'develop' of https://github.com/aliciaferreira/aliciaferreira into larrea "Actualizando local"
+[31m|[m [1;32m|[m [31m|[m [34m|[m[1;32m\[m  
+[31m|[m [1;32m|[m [31m|[m[1;32m_[m[34m|[m[1;32m/[m  
+[31m|[m [1;32m|[m[1;32m/[m[31m|[m [34m|[m   
+[31m|[m [1;32m|[m [31m|[m * [33m3996ed6[m carga de archivos larrea
+[31m|[m [1;32m|[m[31m_[m[31m|[m[31m/[m  
+[31m|[m[31m/[m[1;32m|[m [31m|[m   
+[31m|[m [1;32m|[m [31m|[m *   [33mc205663[m[33m ([m[1;31morigin/rucci[m[33m)[m Merge branch 'develop' of https://github.com/aliciaferreira/aliciaferreira into rucci "updating local"
+[31m|[m [1;32m|[m [31m|[m [36m|[m[1;32m\[m  
+[31m|[m [1;32m|[m [31m|[m[1;32m_[m[36m|[m[1;32m/[m  
+[31m|[m [1;32m|[m[1;32m/[m[31m|[m [36m|[m   
+[31m|[m * [31m|[m [36m|[m [33mc44c0e4[m[33m ([m[1;31morigin/duarte[m[33m)[m add h2 at index
+[31m|[m[31m/[m [31m/[m [36m/[m  
+[31m|[m [31m|[m * [33m6b9eacf[m uploading files
+[31m|[m [31m|[m[31m/[m  
+[31m|[m[31m/[m[31m|[m   
+[31m|[m [31m|[m * [33ma27d52d[m[33m ([m[1;31morigin/vasca[m[33m)[m add preference clima
+[31m|[m [31m|[m[31m/[m  
+[31m|[m[31m/[m[31m|[m   
+[31m|[m [31m|[m * [33m4df90e3[m[33m ([m[1;31morigin/camara[m[33m)[m agrego preferencia: serie
+[31m|[m [31m|[m[31m/[m  
+[31m|[m[31m/[m[31m|[m   
+[31m|[m [31m|[m * [33m1c02454[m[33m ([m[1;31morigin/acosta[m[33m)[m add preference: number
+[31m|[m [31m|[m[31m/[m  
+[31m|[m[31m/[m[31m|[m   
+[31m|[m [31m|[m * [33mcda00d4[m[33m ([m[1;31morigin/Lopez[m[33m)[m Creando mis archivos con una preferencia
+[31m|[m [31m|[m[31m/[m  
+[31m|[m[31m/[m[31m|[m   
+* [31m|[m [33m1df639c[m add ferreira preferences files
+[31m|[m[31m/[m  
+* [33m120f8ea[m change students in index
+*   [33m53e0f62[m Merge pull request #1 from aliciaferreira/develop
+[1;36m|[m[31m\[m  
+[1;36m|[m * [33m05cb494[m manage display of index
+[1;36m|[m[1;36m/[m  
+* [33m16f7b5c[m Add files via upload
+* [33m6dd7c94[m Initial commit
